@@ -1,0 +1,36 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    <FilesMatch "\.(html|htm|js|css)$">
+      FileETag None
+      <IfModule mod_headers.c>
+        Header unset ETag
+        Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "Wed, 12 Jan 1980 05:00:00 GMT"
+      </IfModule>
+    </FilesMatch>
+
+    RewriteRule ^(.+)\.pdx$ $1.woff
+    RewriteRule ^(.+)\.pdk$ $1.woff2
+    RewriteRule ^(.+)\.pda$ $1.ttf
+    RewriteRule ^cms/template_resource/(.+)\.index$ cms/template_resource/$1.mp4
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
