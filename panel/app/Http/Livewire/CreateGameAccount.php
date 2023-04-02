@@ -24,14 +24,14 @@ class CreateGameAccount extends Component
     ];
 
     protected $messages = [
-        'username.required' => 'Введите логин.',
-        'username.min' => 'Минимальная длина: :min символов.',
-        'username.max' => 'Максимальная длина: :max символов.',
-        'username.unique' => 'Логин уже занят.',
-        'username.regex' => 'Логин может содержать только латинские буквы, цифры и дефис',
-
-        'password.required' => 'Введите пароль.',
-        'password.max' => 'Максимальная длина: :max символов.',
+        'username.required' => '请输入登录名。',
+        'username.min' => '最小长度：:min个字符。',
+        'username.max' => '最大长度：:max个字符。',
+        'username.unique' => '登录名已被使用。',
+        'username.regex' => '登录名只能包含拉丁字母，数字和短横线。',
+        
+        'password.required' => '请输入密码。',
+        'password.max' => '最大长度：:max个字符。',
     ];
 
     public function updated($propertyName)

@@ -4,14 +4,14 @@
     </div>
 
     <div class="mt-8 text-2xl">
-        Welcome to your Jetstream application!
+        欢迎使用 Jetstream 应用程序！
     </div>
 
     <div class="mt-6 text-gray-500">
-        Laravel Jetstream provides a beautiful, robust starting point for your next Laravel application. Laravel is designed
-        to help you build your application using a development environment that is simple, powerful, and enjoyable. We believe
-        you should love expressing your creativity through programming, so we have spent time carefully crafting the Laravel
-        ecosystem to be a breath of fresh air. We hope you love it.
+        Laravel Jetstream 为您的下一个 Laravel 应用程序提供了一个美丽而强大的起点。
+        Laravel 的设计目的是帮助您使用简单、强大且愉悦的开发环境构建应用程序。
+        我们相信您应该通过编程来表达自己的创造力，因此我们花费了时间精心打造 Laravel 生态系统
+        ，以呼吸新鲜空气的方式提供开发体验。我们希望您会喜欢它。
     </div>
 </div>
 
@@ -24,12 +24,12 @@
 
         <div class="ml-12">
             <div class="mt-2 text-sm text-gray-500">
-                Laravel has wonderful documentation covering every aspect of the framework. Whether you're new to the framework or have previous experience, we recommend reading all of the documentation from beginning to end.
+                Laravel拥有精美的文档，涵盖了框架的各个方面。无论您是新手还是有经验的开发者，我们建议从头到尾阅读所有文档。
             </div>
 
             <a href="https://laravel.com/docs">
                 <div class="mt-3 flex items-center text-sm font-semibold text-indigo-700">
-                        <div>Explore the documentation</div>
+                        <div>浏览文档</div>
 
                         <div class="ml-1 text-indigo-500">
                             <svg viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>

@@ -4,7 +4,7 @@
             <div data-v-15d61d2e="" class="card-title">
                 <div data-v-15d61d2e="" class="row">
                     <div data-v-15d61d2e="" class="col-12 col-md-6">
-                        <h3 data-v-15d61d2e="" class="text-uppercase">Заявки</h3>  <div data-v-15d61d2e="" class="card-subtitle">
+                        <h3 data-v-15d61d2e="" class="text-uppercase">申请</h3>  <div data-v-15d61d2e="" class="card-subtitle">
                             <div data-v-7c3c8cd5="" data-v-15d61d2e="">
                                 @if (session()->has('message'))
                                     <div data-v-4918d6bc="" class="alert-message success" data-v-15d61d2e="">
@@ -28,14 +28,14 @@
                          b-table table-hover">
                             <thead class="thead-dark">
                             <tr>
-                                <th tabindex="0" aria-colindex="1" aria-label="Click to sort Ascending"
-                                    aria-sort="descending" class="w-md-auto">Пользователь</th>
-                                <th aria-colindex="2"  class="w-md-auto">Баланс</th>
-                                <th aria-colindex="3"  class="w-md-auto">Сервис</th>
-                                <th aria-colindex="4" class="w-md-auto">Кошелек</th>
-                                <th aria-colindex="5" class="w-md-auto">Сумма</th>
-                                <th aria-colindex="7" class="w-md-auto">Одобрить</th>
-                                <th aria-colindex="8" class="w-md-auto">Отклонить</th>
+                                <th tabindex="0" aria-colindex="1" aria-label="点击升序排序"
+                                    aria-sort="descending" class="w-md-auto">用户</th>
+                                <th aria-colindex="2"  class="w-md-auto">余额</th>
+                                <th aria-colindex="3"  class="w-md-auto">服务</th>
+                                <th aria-colindex="4" class="w-md-auto">钱包</th>
+                                <th aria-colindex="5" class="w-md-auto">金额</th>
+                                <th aria-colindex="7" class="w-md-auto">批准</th>
+                                <th aria-colindex="8" class="w-md-auto">拒绝</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -50,13 +50,13 @@
                                             <button wire:click="updates( {{ $item}})" wire:loading.attr="disabled"
                                                     data-v-312dd04b="" data-v-f521b32c="" class="btn-warning btn"
                                                     data-v-15d61d2e="">
-                                                Одобрить
+                                                批准
                                             </button>
                                         </th>
                                         <th aria-colindex="8" class="w-md-auto">
                                             <button wire:click="danger( {{ $item}})" wire:loading.attr="disabled"
                                                     data-v-312dd04b="" data-v-f521b32c="" class="btn-danger btn" data-v-15d61d2e="">
-                                                Отклонить
+                                                拒绝
                                             </button>
                                         </th>
                                     </tr>
@@ -65,7 +65,7 @@
                         </table>
                         @if($withdraw->isEmpty())
                             <div data-v-70ad3292="" class="table-states-container table-background-transparent">
-                                Заявок нет.
+                                暂无申请。
                             </div>
                         @endif
                     </div>

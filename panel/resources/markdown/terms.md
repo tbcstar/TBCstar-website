@@ -1,3 +1,5 @@
-# Terms of Service
+#服务条款
 
-Edit this file to define the terms of service for your application.
+
+
+编辑此文件以定义应用程序的服务条款。

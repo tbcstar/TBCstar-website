@@ -4,12 +4,12 @@
             <table data-v-483e03c5="" data-v-121e7cc8="" class="account-table thead-hide thead-no-border table-background-transparent table b-table table-dark">
                 <thead class="thead-dark">
                 <tr>
-                    <th aria-colindex="1" class="game-icon">Regional Game Franchise Icon Filename</th>
-                    <th aria-colindex="2">Localized Game Name</th>
-                    <th aria-colindex="3" class="d-none d-md-table-cell">Game Account Status</th>
-                    <th aria-colindex="4" class="d-none d-xl-table-cell">Last Played Date Millis</th>
-                    <th aria-colindex="5" class="d-none d-md-table-cell">Game Time View</th>
-                    <th aria-colindex="6" class="d-none d-md-table-cell">Links</th>
+                    <th aria-colindex="1" class="game-icon">区域游戏特许经营标志文件名</th>
+                    <th aria-colindex="2">本地化游戏名称</th>
+                    <th aria-colindex="3" class="d-none d-md-table-cell">游戏账户状态</th>
+                    <th aria-colindex="4" class="d-none d-xl-table-cell">上次游戏时间（毫秒）</th>
+                    <th aria-colindex="5" class="d-none d-md-table-cell">游戏时间视图</th>
+                    <th aria-colindex="6" class="d-none d-md-table-cell">链接</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -32,11 +32,11 @@
                             <div data-v-121e7cc8="">{{ $item->realmName }}</div>
                             <div data-v-121e7cc8="" class="d-md-none">
                                 <div data-v-121e7cc8="" class="mt-4">
-                                    <div data-v-121e7cc8="" class="info-label">Время в игре</div>
+                                    <div data-v-121e7cc8="" class="info-label">游戏时间</div>
                                     <span data-v-121e7cc8="" class="text-light">{{ Text::totalTime($item->totaltime) }}</span>
                                 </div>
                                 <div data-v-121e7cc8="" class="mt-4">
-                                    <div data-v-121e7cc8="" class="info-label">Последний вход</div>
+                                    <div data-v-121e7cc8="" class="info-label">上次登录时间</div>
                                     <span data-v-121e7cc8="" class="text-light">{{ Text::lastLoginCharacters($item->logout_time) }}</span>
                                 </div>
                             </div>
@@ -45,22 +45,22 @@
                                     @if($item->isActive === 0)
                                         <button type="submit" wire:click="update({{ $item->guid }})"
                                                 data-v-15d61d2e="" class="btn-tertiary btn">
-                                            Выбрать
+                                            选择
                                         </button>
                                     @else
                                         <button type="submit" disabled data-v-15d61d2e="" class="btn-tertiary btn">
-                                            Выбран
+                                            已选择
                                         </button>
                                     @endif
                                 </div>
                             </div>
                         </td>
                         <td aria-colindex="3" class="d-none d-md-table-cell align-middle">
-                            <span data-v-121e7cc8="" class="text-light">Время в игре</span>
+                            <span data-v-121e7cc8="" class="text-light">游戏时间</span>
                             <div data-v-121e7cc8="" class="info-label">{{ Text::totalTime($item->totaltime) }}</div>
                         </td>
                         <td aria-colindex="3" class="d-none d-md-table-cell align-middle">
-                            <span data-v-121e7cc8="" class="text-light">Последний вход</span>
+                            <span data-v-121e7cc8="" class="text-light">上次登录时间</span>
                             <div data-v-121e7cc8="" class="info-label">{{ Text::lastLoginCharacters($item->logout_time) }}</div>
                         </td>
                         <td aria-colindex="4" class="d-none d-xl-table-cell align-middle"></td>
@@ -73,11 +73,11 @@
                                     @if($item->isActive === 0)
                                         <button type="submit" wire:click="update({{ $item->guid }})"
                                                 data-v-15d61d2e="" class="btn-tertiary btn">
-                                            Выбрать
+                                            选择
                                         </button>
                                     @else
                                         <button type="submit" disabled data-v-15d61d2e="" class="btn-tertiary btn">
-                                            Выбран
+                                            已选择
                                         </button>
                                     @endif
                                 </div>

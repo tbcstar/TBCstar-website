@@ -22,21 +22,21 @@
                         <div class="css-0 ee5q89g1"></div>
                         <div class="css-0 ee5q89g2">
                             <h3 class="css-i2w5gc e1obxag90">{{ $title->Name }}</h3>
-                            <div class="css-19yti9t e1a9rl710">Уровень предмета: {{ $info->ItemLevel }}</div>
-                            <div class="css-0 e1j5dtz90">Становится персональным при получении</div>
+                            <div class="css-19yti9t e1a9rl710">物品等级：{{ $info->ItemLevel }}</div>
+                            <div class="css-0 e1j5dtz90">在获得时变为个人物品</div>
                             <div class="css-0 elvgcyu0">
-                                <div class="css-0 elvgcyu1">Уникальный</div>
+                                <div class="css-0 elvgcyu1">唯一</div>
                             </div>
                             <div class="css-gg4vpm e2qnnmi0">
-                                <div class="css-0 e2qnnmi2">Аксессуар</div>
-                                <div class="css-0 e2qnnmi1">Кожа</div>
+                                <div class="css-0 e2qnnmi2">配饰</div>
+                                <div class="css-0 e2qnnmi1">外观</div>
                             </div>
                             <div class="css-0 e159a0ui0">
                                 <div class="css-gg4vpm e159a0ui1"></div>
                                 <div class="css-0 e159a0ui2"></div>
                             </div>
                             <div class="css-0 e12214d80">
-                                <div class="css-xzdsjr e12214d81">Если на персонаже: рейтинг пробивания брони + 84</div>
+                                <div class="css-xzdsjr e12214d81">如果穿在角色身上：护甲穿透评分 +84</div>
                             </div>
                             <div class="css-0 e106su2x0"></div>
                         </div>

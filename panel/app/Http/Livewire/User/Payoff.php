@@ -55,13 +55,13 @@ class Payoff extends Component
     }
 
     protected $messages = [
-        'sum.required' => 'Введите количество бонусов.',
-        'sum.min' => 'Минимальная сумма: :min.',
-        'sum.max' => 'Максимальная сумма: :max.',
-        'sum.numeric' => 'Введите числовое значение.',
-        'wallet.required' => 'Укажите номер для вывода',
-        'wallet.numeric' => 'Введите числовое значение.',
-        'wallet.min' => 'Минимальное количество символов :min',
+        'sum.required' => '请输入DP点数。',
+        'sum.min' => '最小金额：:min。',
+        'sum.max' => '最大金额：:max。',
+        'sum.numeric' => '请输入数字。',
+        'wallet.required' => '请提供提款帐户号码。',
+        'wallet.numeric' => '请输入数字。',
+        'wallet.min' => '最小字符数：:min。',
     ];
 
     public function mount()
@@ -86,7 +86,7 @@ class Payoff extends Component
             'service' => 'withdraw',
             'services' => 'Enot',
             'servicesKey' => $this->service,
-            'title' => 'Вывод средств',
+            'title' => '取款',
             'price' => $this->sum,
             'status' => '2',
             'order_id' => time(),

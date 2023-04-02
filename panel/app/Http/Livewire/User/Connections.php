@@ -43,7 +43,7 @@ class Connections extends Component
 
         if (! Hash::check($this->password, Auth::user()->password)) {
             throw ValidationException::withMessages([
-                'password' => [__('This password does not match our records.')],
+                'password' => [__('该密码与我们的记录不匹配。')],
             ]);
         }
 

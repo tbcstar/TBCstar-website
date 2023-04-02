@@ -3,7 +3,7 @@
             <div data-v-15d61d2e="" class="card-title">
                 <div data-v-15d61d2e="" class="row">
                     <div data-v-15d61d2e="" class="col-12 col-md-6">
-                        <h3 data-v-15d61d2e="" class="text-uppercase">Мои заявки</h3>
+                        <h3 data-v-15d61d2e="" class="text-uppercase">我的申请</h3>
                     </div>
                 </div>
             </div>
@@ -14,11 +14,11 @@
                                aria-rowcount="-1" sort-direction="asc" class="table b-table table-hover table-dark account-table thead-hide thead-no-border table-background-transparent">
                             <thead class="thead-dark">
                                 <tr>
-                                    <th aria-colindex="1" class="w-md-auto">Ник</th>
-                                    <th aria-colindex="2" class="w-md-auto">Сервер</th>
-                                    <th aria-colindex="3" class="w-md-auto">Фракция</th>
-                                    <th aria-colindex="4" class="w-md-auto">Раса</th>
-                                    <th aria-colindex="5" class="w-md-auto">Статус</th>
+                                    <th aria-colindex="1" class="w-md-auto">昵称</th>
+                                    <th aria-colindex="2" class="w-md-auto">服务器</th>
+                                    <th aria-colindex="3" class="w-md-auto">阵营</th>
+                                    <th aria-colindex="4" class="w-md-auto">种族</th>
+                                    <th aria-colindex="5" class="w-md-auto">状态</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -43,16 +43,16 @@
                                     <td aria-colindex="5" class="blz-xs-35 blz-md-15 pl-1 pl-md-4 pr-3 pr-md-5 align-left align-middle text-white blz-text-md-white-70">
                                         <div data-v-70ad3292="" class="text-nowrap d-flex align-items-center justify-content-end justify-content-md-start">
                                             @if($item->status === 1)
-                                                <span data-v-70ad3292="" title="Выполнено" class="text-truncate blz-text-capitalize-first blz-mw-100px">
-                                                    Выполнено
+                                                <span data-v-70ad3292="" title="已完成" class="text-truncate blz-text-capitalize-first blz-mw-100px">
+                                                    已完成
                                                 </span>
                                             @elseif($item->status === 0)
-                                                <span data-v-70ad3292="" title="В обработке" class="text-truncate blz-text-capitalize-first blz-mw-100px">
-                                                    В обработке
+                                                <span data-v-70ad3292="" title="处理中" class="text-truncate blz-text-capitalize-first blz-mw-100px">
+                                                    处理中
                                                 </span>
                                             @else
-                                                <span data-v-70ad3292="" title="Отклонено" class="text-truncate blz-text-capitalize-first blz-mw-100px">
-                                                    Отклонено
+                                                <span data-v-70ad3292="" title="已拒绝" class="text-truncate blz-text-capitalize-first blz-mw-100px">
+                                                    已拒绝
                                                 </span>
                                             @endif
 
@@ -61,7 +61,7 @@
                                     @if($item->status === 0)
                                     <td aria-colindex="6" class="d-none d-md-table-cell blz-md-15 align-middle text-nowrap">
                                         <x-jet-danger-button class="ml-2" wire:click="delete({{ $item->id }})" wire:loading.attr="disabled">
-                                            {{ __('Отменить') }}
+                                            {{ __('取消') }}
                                         </x-jet-danger-button>
                                     </td>
                                     @endif
@@ -74,7 +74,7 @@
                 </div>
                 @if($list->isEmpty())
                     <div data-v-70ad3292="" class="table-states-container table-background-transparent">
-                        Заявок не найдено.
+                        没有找到申请。
                     </div>
                 @endif
             </div>

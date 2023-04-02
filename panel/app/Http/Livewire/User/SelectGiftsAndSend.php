@@ -28,7 +28,7 @@ class SelectGiftsAndSend extends Component
     public function sendGifts(): RedirectResponse|Redirector
     {
         $soap = new Soap();
-        $soap->cmd('.send items '. auth()->user()->active->name .' "'.$this->item->title.'" "Награда за акцию: Пригласи друга." '. $this->item->item .'[:'.$this->item->countItem.']');
+        $soap->cmd('.send items '. auth()->user()->active->name .' "'.$this->item->title.'" "活动奖励：邀请好友" '. $this->item->item .'[:'.$this->item->countItem.']');
         $this->item->update([
             'status' => 1
         ]);

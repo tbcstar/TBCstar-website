@@ -29,7 +29,7 @@ class UpdateUserPassword implements UpdatesUserPasswords
             $password = strtoupper(sha1(strtoupper($user->username . ':' . $input['current_password'])));
 
             if (! isset($input['current_password']) || $password != $user->sha_pass_hash) {
-                $validator->errors()->add('current_password', __('The provided password does not match your current password.'));
+                $validator->errors()->add('current_password', __('提供的密码与您当前的密码不匹配。'));
             }
         })->validateWithBag('updatePassword');
 

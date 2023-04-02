@@ -21,7 +21,7 @@ class updateUserInfo extends Command
      *
      * @var string
      */
-    protected $description = 'Обновление пользователей но новый формат БД';
+    protected $description = '更新用户，但使用新的数据库格式。';
 
     /**
      * Create a new command instance.

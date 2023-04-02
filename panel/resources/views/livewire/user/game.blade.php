@@ -1,3 +1,3 @@
 <div>
-    {{-- Close your eyes. Count to one. That is how long forever feels. --}}
+    {{-- 闭上眼睛。数到一。这就是永远的感觉。 --}}
 </div>

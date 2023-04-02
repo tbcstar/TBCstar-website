@@ -19,8 +19,8 @@ class UpdateEmail extends Component
     ];
 
     protected array $messages = [
-        'state.email.required' => 'Введите email.',
-        'state.email.email' => 'Введите корректный email.'
+        'state.email.required' => '请输入电子邮箱。',
+        'state.email.email' => '请输入正确的电子邮箱。'
     ];
 
     public function updated($propertyName)

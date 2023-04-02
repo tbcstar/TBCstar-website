@@ -22,7 +22,7 @@ class updateCharacters extends Command
      *
      * @var string
      */
-    protected $description = 'Обновление списка персонажей (Мультиреалм)';
+    protected $description = '角色列表更新（多服务器）';
 
     /**
      * Create a new command instance.

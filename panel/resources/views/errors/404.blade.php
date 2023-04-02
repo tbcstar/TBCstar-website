@@ -1,6 +1,6 @@
 @extends('errors::layout')
 
-@section('title', __('Not Found'))
+@section('title', __('页面未找到'))
 
 @section('code', '404')
 
@@ -13,11 +13,11 @@
                     <source data-v-3e2c78e8="" src="{{ asset('static/media/murloc.mp4') }}" type="video/mp4"></video>
             </div>
             <div data-v-3e2c78e8="" class="error-content">
-                <h1 data-v-3e2c78e8="">404 – страница не найдена</h1>
-                Мы выслали за вами спасательный отряд мурлоков, они отведут вас в безопасное место.
+                <h1 data-v-3e2c78e8="">404 页面未找到</h1>
+                我们已经派出救援队来把你带到安全的地方。
                 <div data-v-3e2c78e8="">
                     <a href="{{ url('/') }}" data-v-3e2c78e8="" class="btn btn-primary mt-3">
-                        Главная
+                        首页
                     </a>
                 </div>
             </div>

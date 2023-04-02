@@ -10,7 +10,7 @@
             @if($item->price > 1)
             <span  data-v-01546580="" data-v-6de7e15f="">{{ $item->price . ' ' . trans_choice('account.bonus', $item->price) }}</span>
             @else
-            <span data-v-01546580="" data-v-6de7e15f="">Бесплатно</span>
+            <span data-v-01546580="" data-v-6de7e15f="">免费</span>
             @endif
         </div>
     </div>

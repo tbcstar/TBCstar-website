@@ -23,11 +23,11 @@ class Soap {
     public function connect() {
         try {
             $this->soap = new SoapClient(NULL, array(
-                'location' => 'http://185.71.65.236:7879/',
-                'uri' => 'urn:TC',
+                'location' => 'http://127.0.0.1:7878/',
+                'uri' => 'urn:AC',
                 'style' => SOAP_RPC,
-                'login' => 'dont4u',
-                'password' => '8jw6X4CG0'
+                'login' => 'admin',
+                'password' => 'A111111a!'
             ));
         }
         catch (SoapFault $e) {

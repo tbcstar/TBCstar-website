@@ -4,9 +4,9 @@
                 <table data-v-483e03c5="" data-v-70ad3292="" class="table b-table table-dark gift-claims-table thead-no-border thead-text-normal card-background-color mt-md-5">
                     <thead class="thead-dark">
                     <tr>
-                        <th tabindex="0" aria-colindex="1" aria-label="Click to sort Ascending" aria-sort="descending" class="sorting sorting_desc d-none d-md-table-cell blz-md-15 text-nowrap">Дата</th>
-                        <th aria-colindex="2" class="w-100 pl-sm-3 pr-sm-1 text-nowrap">Продукт/услуга</th>
-                        <th aria-colindex="3" class="blz-xs-35 blz-md-15 pl-1 pl-md-4 text-nowrap">Статус</th>
+                        <th tabindex="0" aria-colindex="1" aria-label="点击按升序排序" aria-sort="descending" class="sorting sorting_desc d-none d-md-table-cell blz-md-15 text-nowrap">日期</th>
+                        <th aria-colindex="2" class="w-100 pl-sm-3 pr-sm-1 text-nowrap">物品/服务</th>
+                        <th aria-colindex="3" class="blz-xs-35 blz-md-15 pl-1 pl-md-4 text-nowrap">状态</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -29,7 +29,7 @@
                             <td aria-colindex="3" class="blz-xs-35 blz-md-15 pl-1 pl-md-4 pr-3 pr-md-5 align-left align-middle text-white blz-text-md-white-70">
                                 <div data-v-70ad3292="" class="text-nowrap d-flex align-items-center justify-content-end justify-content-md-start">
                                     @if($item->status === 1)
-                                    <span data-v-70ad3292="" title="Использовано" class="text-truncate blz-text-capitalize-first blz-mw-100px">Использовано</span>
+                                    <span data-v-70ad3292="" title="已使用" class="text-truncate blz-text-capitalize-first blz-mw-100px">已使用</span>
                                     @else
                                         @if(auth()->user()->active)
                                             <livewire:user.select-gifts-and-send :item="$item" />
@@ -37,7 +37,7 @@
                                             <livewire:select-gifts-vote :item="$item" />
                                         @else
                                             <button type="submit" wire:click="select" wire:loading.attr="disabled" data-v-15d61d2e="" class="btn-tertiary btn">
-                                               Выбрать персонажа
+                                               选择角色
                                             </button>
                                         @endif
                                     @endif
@@ -49,7 +49,7 @@
                 </table>
                 @if($gifts->isEmpty())
                 <div data-v-70ad3292="" class="table-states-container table-background-transparent">
-                    Ваша история подарков в настоящий момент пуста.
+                    您当前的礼物历史记录为空。
                 </div>
                 @endif
             </div>

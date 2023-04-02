@@ -49,7 +49,7 @@
                             <div class="NavbarFooter-selectorLocales NavbarFooter-selectorSection">
                                 <div class="NavbarFooter-selectorSectionBlock">
                                     <a class="NavbarFooter-selectorLocale @if(app()->isLocale('de')) is-active is-selected @endif NavbarFooter-selectorOption" href="{{ route('lang.switch', 'de') }}">
-                                        <div class="NavbarFooter-selectorOptionLabel">Deutsch</div>
+                                        <div class="NavbarFooter-selectorOptionLabel">德语</div>
                                         <div class="NavbarFooter-selectorOptionCheck NavbarFooter-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" focusable="false">
                                                 <use xlink:href="#Navbar-icon-check"></use>
@@ -57,7 +57,7 @@
                                         </div>
                                     </a>
                                     <a class="NavbarFooter-selectorLocale @if(app()->isLocale('en')) is-active is-selected @endif NavbarFooter-selectorOption" href="{{ route('lang.switch', 'en') }}">
-                                        <div class="NavbarFooter-selectorOptionLabel">English (EU)</div>
+                                        <div class="NavbarFooter-selectorOptionLabel">英语（美国）</div>
                                         <div class="NavbarFooter-selectorOptionCheck NavbarFooter-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" focusable="false">
                                                 <use xlink:href="#Navbar-icon-check"></use>
@@ -65,13 +65,13 @@
                                         </div>
                                     </a>
                                     <a class="NavbarFooter-selectorLocale @if(app()->isLocale('es')) is-active is-selected @endif NavbarFooter-selectorOption" href="{{ route('lang.switch', 'es') }}" data-id="es-es">
-                                        <div class="NavbarFooter-selectorOptionLabel">Español (EU)</div>
+                                        <div class="NavbarFooter-selectorOptionLabel">西班牙语（美国）</div>
                                         <div class="NavbarFooter-selectorOptionCheck NavbarFooter-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" focusable="false"><use xlink:href="#Navbar-icon-check"></use></svg>
                                         </div>
                                     </a>
                                     <a class="NavbarFooter-selectorLocale @if(app()->isLocale('fr')) is-active is-selected @endif NavbarFooter-selectorOption" href="{{ route('lang.switch', 'fr') }}" data-id="fr-fr">
-                                        <div class="NavbarFooter-selectorOptionLabel">Français</div>
+                                        <div class="NavbarFooter-selectorOptionLabel">法语</div>
                                         <div class="NavbarFooter-selectorOptionCheck NavbarFooter-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" focusable="false"><use xlink:href="#Navbar-icon-check"></use></svg>
                                         </div>
@@ -79,19 +79,19 @@
                                 </div>
                                 <div class="NavbarFooter-selectorSectionBlock">
                                     <a class="NavbarFooter-selectorLocale @if(app()->isLocale('it')) is-active is-selected @endif NavbarFooter-selectorOption" href="{{ route('lang.switch', 'it') }}" data-id="it-it">
-                                        <div class="NavbarFooter-selectorOptionLabel">Italiano</div>
+                                        <div class="NavbarFooter-selectorOptionLabel">意大利语</div>
                                         <div class="NavbarFooter-selectorOptionCheck NavbarFooter-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" focusable="false"><use xlink:href="#Navbar-icon-check"></use></svg>
                                         </div>
                                     </a>
                                     <a class="NavbarFooter-selectorLocale @if(app()->isLocale('pt')) is-active is-selected @endif NavbarFooter-selectorOption" href="{{ route('lang.switch', 'pt') }}" data-id="pt-pt">
-                                        <div class="NavbarFooter-selectorOptionLabel">Português (EU)</div>
+                                        <div class="NavbarFooter-selectorOptionLabel">葡萄牙语（美国）</div>
                                         <div class="NavbarFooter-selectorOptionCheck NavbarFooter-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" focusable="false"><use xlink:href="#Navbar-icon-check"></use></svg>
                                         </div>
                                     </a>
                                     <a class="NavbarFooter-selectorLocale @if(app()->isLocale('ru')) is-active is-selected @endif NavbarFooter-selectorOption" href="{{ route('lang.switch', 'ru') }}" data-id="ru-ru">
-                                        <div class="NavbarFooter-selectorOptionLabel">Русский</div>
+                                        <div class="NavbarFooter-selectorOptionLabel">中文</div>
                                         <div class="NavbarFooter-selectorOptionCheck NavbarFooter-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" focusable="false"><use xlink:href="#Navbar-icon-check"></use>
                                             </svg>
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="NavbarFooter-copyright">© {{ config('app.name') }}, Inc., 2021</div>
+                <div class="NavbarFooter-copyright">© {{ config('app.name') }}, Inc., 2023</div>
             </div>
         </div>
     </footer>

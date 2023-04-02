@@ -3,7 +3,7 @@
         {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())
             <li aria-hidden="true" class="page-item disabled"><span class="page-link">«</span></li>
-            <li aria-hidden="true" class="page-item disabled"><span class="page-link">Пред.</span></li>
+            <li aria-hidden="true" class="page-item disabled"><span class="page-link">上一页</span></li>
         @else
             <li class="page-item">
                 <a href="{{ $paginator->previousPageUrl() }}" aria-label="@lang('pagination.next')"
@@ -13,7 +13,7 @@
             </li>
             <li class="page-item">
                 <a role="menuitem" tabindex="-1" aria-label="Goto last page" href="{{ $paginator->previousPageUrl() }}" class="page-link">
-                    <span aria-hidden="true">Пред.</span>
+                    <span aria-hidden="true">上一页</span>
                 </a>
             </li>
         @endif
@@ -29,7 +29,7 @@
             <li class="page-item">
                 <a href="{{ $paginator->nextPageUrl() }}" aria-label="@lang('pagination.next')"
                     class="page-link">
-                    <span aria-hidden="true">Далее</span>
+                    <span aria-hidden="true">下一页</span>
                 </a>
             </li>
             <li class="page-item">
@@ -38,7 +38,7 @@
                 </a>
             </li>
         @else
-            <li aria-hidden="true" class="page-item disabled"><span class="page-link">Далее</span></li>
+            <li aria-hidden="true" class="page-item disabled"><span class="page-link">下一页</span></li>
             <li aria-hidden="true" class="page-item disabled"><span class="page-link">»</span></li>
         @endif
     </ul>

@@ -5,7 +5,7 @@
             <div class="step__content step__block" id="flow-content-container">
                 <i class="phantom" id="step-meta-data" data-step-id="set-battletag" data-step-has-errors="false"></i>
                 <h1 class="step__title step__block"></h1>
-                <p class="step__description step__block">{{ __('Забыли свой пароль? Без проблем. Просто сообщите нам свой адрес электронной почты, и мы пришлем вам ссылку для сброса пароля.') }}</p>
+                <p class="step__description step__block">{{ __('您忘记密码了吗？没问题。请告诉我们您的电子邮件地址，我们将向您发送重置密码的链接。') }}</p>
 
                 <form action="{{ route('password.update') }}" method="post" id="password-form" novalidate="novalidate" class="step__form step__block" >
                     @csrf
@@ -41,14 +41,14 @@
                         </div>
                     @endif
 
-                    <button type="submit" class="step__button--primary step__block">Сохранить</button>
+                    <button type="submit" class="step__button--primary step__block">保存</button>
                 </form>
 
                 <div class="step__hr step__block">
-                    <span class="step__hr__title">Или</span>
+                    <span class="step__hr__title">或者</span>
                 </div>
                 <div class="step__block">
-                    <a href="{{ route('register') }}">Создать аккаунт</a>
+                    <a href="{{ route('register') }}">创建帐户</a>
                 </div>
             </div>
         </div>

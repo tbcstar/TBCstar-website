@@ -18,7 +18,7 @@
             }
 
             if (JSON_ERROR_NONE !== json_last_error() || false === $encodedData) {
-                throw new JsonException(sprintf('Could not encode value into JSON format. Error was: "%s".', json_last_error_msg()));
+                throw new JsonException(sprintf('无法将值编码为JSON格式。错误是：“%s”。', json_last_error_msg()));
             }
 
             return $encodedData;
@@ -26,14 +26,14 @@
 
         public static function banTime($date) {
             if (is_null($date)) {
-                return "Не известно";
+                return "未知";
             }
             return self::rusDateLastLogin(DateTime::createFromFormat('Y-m-d H:i:s', $date)->getTimestamp());
         }
 
         public static function convertDateLastLogin($date) {
             if (is_null($date)) {
-                return "Не известно";
+                return "未知";
             }
             return self::rusDateLastLogin(DateTime::createFromFormat('Y-m-d H:i:s', $date)->getTimestamp());
         }
@@ -44,14 +44,14 @@
         public static function rusDateLastLogin($str, $gtr = FALSE ) {
             $locale = "ru";
             if($gtr) {
-                $months = array('Янв.', 'Фев.', 'Март.', 'Апр.', 'Мая', 'Июня', 'Июля', 'Авг.', 'Сен.', 'Окт.', 'Нояб.', 'Дек.');
+                $months = array('1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月');
             }   else {
-                $months = array('Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря');
+                $months = array('一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月');
             }
             $newDatetime = new Datetime('@'.$str);
             $month = $newDatetime->format('n');
             if($locale == 'ru') {
-                return  $newDatetime->format('d '.$months[$month-1].'') .' '. $newDatetime->format('Y') . 'г. в '. $newDatetime->format('h:i');
+                return  $newDatetime->format('d '.$months[$month-1].'') .' '. $newDatetime->format('Y') . '年 '. $newDatetime->format('h:i');
             } else {
                 return $album_data = $newDatetime->format('M d') . ", " . $newDatetime->format('Y');
             }
@@ -87,17 +87,17 @@
             $days = $time;
 
             if ($days != 0)
-                $days = $days." д.";
+                $days = $days." 天。";
             else
                 $days = "";
             if ($hours != 0)
-                $hours = $hours." ч.";
+                $hours = $hours." 小时。";
             else
                 $hours = "";
             if ($min != 0)
-                $min = $min." м.";
+                $min = $min." 分钟。";
             else
-                $min = "0 Минут";
+                $min = "0分钟";
 
             return $days. ' ' . $hours. ' ' . $min;
         }
@@ -108,9 +108,9 @@
         public static function rusDate($str, $gtr = FALSE ) {
             $locale = "ru";
             if($gtr) {
-                $months = array('Янв.', 'Фев.', 'Март.', 'Апр.', 'Мая', 'Июня', 'Июля', 'Авг.', 'Сен.', 'Окт.', 'Нояб.', 'Дек.');
+                $months = array('1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月');
             }   else {
-                $months = array('Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря');
+                $months = array('一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月');
             }
             $newDatetime = new Datetime($str);
             $month = $newDatetime->format('n');
@@ -140,52 +140,52 @@
                     switch (floor($d / 60)) {
                         case 0:
                         case 1:
-                            return "только что";
+                            return "刚刚";
                             break;
                         case 2:
-                            return "2 мин. назад";
+                            return "2分钟前";
                             break;
                         case 3:
-                            return "3 мин. назад";
+                            return "3分钟前";
                             break;
                         case 4:
-                            return "4 мин. назад";
+                            return "4分钟前";
                             break;
                         case 5:
-                            return "5 мин. назад";
+                            return "5分钟前";
                             break;
                         default:
-                            return floor($d / 60) . ' мин. назад';
+                            return floor($d / 60) . '分钟前';
                             break;
                     }
                 } elseif ($d < 18000) {
                     switch (floor($d / 3600)) {
                         case 0:
                         case 1:
-                            return "1 ч. назад";
+                            return "1小时前";
                             break;
                         case 2:
-                            return "2 ч. назад";
+                            return "2小时前";
                             break;
                         case 3:
-                            return "3 ч. назад";
+                            return "3小时前";
                             break;
                         case 4:
-                            return "4 ч. назад";
+                            return "4小时前";
                             break;
                         default:
-                            return floor($d / 3600) . ' ч. назад';
+                            return floor($d / 3600) . '小时前';
                             break;
                     }
                 } elseif ($d < 172800) {
                     if (date('d') == $a[2]) {
-                        return "сегодня в {$a[3]}:{$a[4]}";
+                        return "今天 {$a[3]}:{$a[4]}";
                     }
                     if (date('d', time() - 86400) == $a[2]) {
-                        return "вчера в {$a[3]}:{$a[4]}";
+                        return "昨天 {$a[3]}:{$a[4]}";
                     }
                     if (date('d', time() - 172800) == $a[2]) {
-                        return "позавчера в {$a[3]}:{$a[4]}";
+                        return "前天 {$a[3]}:{$a[4]}";
                     }
                 }
             }

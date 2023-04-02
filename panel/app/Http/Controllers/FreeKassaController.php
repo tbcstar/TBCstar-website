@@ -25,7 +25,7 @@ class FreeKassaController extends Controller
             $merchant_id = config('freekassa.project_id');
             $merchant_secret = config('freekassa.secret_key_second');
 
-            if (!in_array(self::getIP(), array('168.119.157.136', '168.119.60.227', '138.201.88.124', '178.154.197.79'))) die("hacking attempt!");
+            if (!in_array(self::getIP(), array('119.85.113.207', '1.12.247.177', '119.91.89.137', '205.185.119.172'))) die("hacking attempt!");
 
             $sign = md5($merchant_id.':'.$request->get('AMOUNT').':'.$merchant_secret.':'.$request->get('MERCHANT_ORDER_ID'));
 

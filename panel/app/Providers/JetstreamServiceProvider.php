@@ -64,13 +64,13 @@ class JetstreamServiceProvider extends ServiceProvider
             'read',
             'update',
             'delete',
-        ])->description('Administrator users can perform any action.');
+        ])->description('管理员用户可以执行任何操作。');
 
         Jetstream::role('editor', 'Editor', [
             'read',
             'create',
             'update',
-        ])->description('Editor users have the ability to read, create, and update.');
+        ])->description('编辑用户拥有阅读、创建和更新的能力。');
     }
 
     protected function customLogin() {

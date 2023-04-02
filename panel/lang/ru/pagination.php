@@ -12,6 +12,6 @@
 */
 
 return [
-    'next'     => 'Вперёд &raquo;',
-    'previous' => '&laquo; Назад',
+    'next'     => '下一页;',
+    'previous' => '&laquo; 上一页',
 ];

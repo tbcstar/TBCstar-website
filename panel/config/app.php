@@ -97,7 +97,7 @@ return [
         'fr' => 'Français',
         'it' => 'Italiano',
         'pt' => 'Português (EU)',
-        'ru' => 'Русский',
+        'ru' => '中文',
     ],
 
     /*

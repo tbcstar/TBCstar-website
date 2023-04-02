@@ -47,12 +47,12 @@ class ServiceSend extends Component
                     'user_id' => auth()->id(),
                     'service' => 'balance',
                     'services' => 'System',
-                    'title' => 'Снятие блокировки аккаунта',
+                    'title' => '解除账户封锁',
                     'price' => $this->item->price,
                     'status' => '1'
                 ]);
             }
-            $this->addError('state.name', 'У вас недостаточное бонусов');
+            $this->addError('state.name', '您的DP数不足');
         }
         return redirect()->route('profile.services');
     }

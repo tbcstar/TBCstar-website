@@ -1,7 +1,7 @@
 <x-app-layout>
     <div data-v-37d13747="" class="security-overview">
         <div data-v-ba34107c="" data-v-37d13747="" class="title-bar text-center text-lg-left position-relative">
-            <h1 data-v-ba34107c="">Безопасность</h1>
+            <h1 data-v-ba34107c="">安全性</h1>
             <div data-v-ba34107c="" class="back d-lg-none position-absolute">
                 <a data-v-ba34107c="" href="/" class="router-link-active"></a>
             </div>
@@ -11,11 +11,11 @@
             <div data-v-15d61d2e="" class="card-title">
                 <div data-v-6061b8eb="" data-v-15d61d2e="" class="row">
                     <div data-v-6061b8eb="" data-v-15d61d2e="" class="col-12 col-md-6">
-                        <h3 data-v-6061b8eb="" data-v-15d61d2e="">Пароль</h3>
+                        <h3 data-v-6061b8eb="" data-v-15d61d2e="">密码</h3>
                     </div>
                     <div data-v-6061b8eb="" data-v-15d61d2e="" class="col-sm-12 col-md-10 label description">
                         <span data-v-6061b8eb="" data-v-15d61d2e="">
-                            Рекомендуем периодически обновлять пароль, чтобы повысить безопасность учетной записи.
+                            建议定期更换密码，以提高账户安全性。
                         </span>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                         <div data-v-6061b8eb="" data-v-15d61d2e="">
                             <div data-v-6061b8eb="" data-v-15d61d2e="" class="row mt-3 mt-sm-0">
                                 <div data-v-6061b8eb="" data-v-15d61d2e="" class="col-4 col-sm-3 col-md-3 col-xl-2 label">
-                                    Пароль
+                                    密码
                                 </div>
                                 <div data-v-6061b8eb="" data-v-15d61d2e="" class="col-8 col-sm-9 col-md-9 col-xl-10">
                                     <span data-v-6061b8eb="" data-v-15d61d2e="" class="placeholder-l animated-background"></span>
@@ -41,7 +41,7 @@
                                 <div data-v-6061b8eb="" data-v-15d61d2e="" class="">
                                     <div data-v-6061b8eb="" data-v-15d61d2e="" class="row mt-3 mt-sm-0">
                                         <div data-v-6061b8eb="" data-v-15d61d2e="" class="col-4 col-sm-3 col-md-3 col-xl-2 label">
-                                            Пароль
+                                            密码
                                         </div>
                                         <div data-v-6061b8eb="" data-v-15d61d2e="" class="col-8 col-sm-9 col-md-9 col-xl-10">
                                             <span data-v-6061b8eb="" data-v-15d61d2e="" class="placeholder-l animated-background"></span>

@@ -4,9 +4,9 @@
             <table data-v-483e03c5="" data-v-70ad3292="" class="table b-table table-hover table-dark account-table thead-hide thead-no-border table-background-transparent">
                 <thead class="thead-dark">
                 <tr>
-                    <th class="sorting sorting_desc d-none d-md-table-cell blz-md-15">№</th>
-                    <th aria-colindex="2" class="w-100 w-md-auto blz-md-40 pl-3 pr-1">Имя</th>
-                    <th aria-colindex="3" class="d-none d-md-table-cell blz-md-15">Бонусы</th>
+                    <th class="sorting sorting_desc d-none d-md-table-cell blz-md-15">编号</th>
+                    <th aria-colindex="2" class="w-100 w-md-auto blz-md-40 pl-3 pr-1">名称</th>
+                    <th aria-colindex="3" class="d-none d-md-table-cell blz-md-15">奖励</th>
                 </tr>
                 </thead>
                 <tbody class="">
@@ -77,7 +77,7 @@
             </table>
             @empty($top)
                 <div data-v-70ad3292="" class="table-states-container table-background-transparent">
-                    Нет данных для отображения
+                    没有可显示的数据
                 </div>
             @endempty
         </div>

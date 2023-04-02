@@ -27,7 +27,7 @@ class UserData extends Model
         if ($this->first_name && $this->last_name) {
             return Str::ucfirst($this->first_name).' '.Str::ucfirst($this->last_name);
         }
-        return 'Не указано';
+        return '未指定';
     }
 
     public function getFullDateAttribute(): string
@@ -35,7 +35,7 @@ class UserData extends Model
         if ($this->day && $this->month && $this->year) {
             return Str::ucfirst($this->day).'.'.Str::ucfirst($this->month).'.'.Str::ucfirst($this->year);
         }
-        return 'Не указано';
+        return '未指定';
     }
 
     public function getFullNameHiddenAttribute(): string
@@ -43,7 +43,7 @@ class UserData extends Model
         if ($this->first_name && $this->last_name) {
             return self::star_replace(Str::ucfirst($this->first_name)).' '.self::star_replace(Str::ucfirst($this->last_name));
         }
-        return 'Не указано';
+        return '未指定';
     }
 
     public function getPhoneHiddenAttribute(): string
@@ -51,7 +51,7 @@ class UserData extends Model
         if($this->phone_number)  {
             return self::star_replace($this->phone_number);
         }
-        return 'Не прикреплен';
+        return '未附加';
     }
 
     public function setFirstNameAttribute(string $value)
@@ -69,7 +69,7 @@ class UserData extends Model
         if ($this->country) {
             return __('country.'.$this->country);
         }
-        return 'Не указано';
+        return '未指定';
     }
 
     function star_replace($string): string
@@ -77,7 +77,7 @@ class UserData extends Model
         if ($string) {
             return substr($string, 0, 2) . str_repeat("*", mb_strlen($string)-2) . substr($string, -2);
         }
-        return 'Не указано';
+        return '未指定';
     }
 
     public function referrer(): \Illuminate\Database\Eloquent\Relations\BelongsTo

@@ -19,7 +19,7 @@ class PaidShift extends Component
     ];
 
     protected $messages = [
-        'state.username.required' => 'Введите NightHoldTag.'
+        'state.username.required' => '请输入论坛昵称。'
     ];
 
     public function updated($propertyName)
@@ -58,10 +58,10 @@ class PaidShift extends Component
                     $this->emit('refresh-navigation-menu');
 
                 }  else {
-                    session()->flash('message', 'Даного пользователя не найдена на форуме. Смена имени не возможна.');
+                    session()->flash('message', '该用户在论坛中不存在。无法更改用户名。');
                 }
             }
-            session()->flash('message', 'У вас недостаточное бонусов');
+            session()->flash('message', '您的DP点数不足');
         } else {
             $forumUser = ForumsXF::where('email', $user->email)->first();
 
@@ -75,12 +75,12 @@ class PaidShift extends Component
                     'free_name' => 1
                 ]);
 
-                session()->flash('message', 'Успешно.');
+                session()->flash('message', '成功');
 
                 $this->emit('saved');
                 $this->emit('refresh-navigation-menu');
             }  else {
-                session()->flash('message', 'Даного пользователя не найдена на форуме. Смена имени не возможна.');
+                session()->flash('message', '该用户在论坛中不存在。无法更改用户名。');
             }
         }
 

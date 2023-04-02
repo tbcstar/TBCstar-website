@@ -192,41 +192,41 @@ class Utils {
         if ($rating > 1370  && $rating <= 1570) {
             return [
                 'tier' => '9',
-                'name' => 'Боец',
+                'name' => '战士',
                 'images' => asset('cms/template_resource/FQHOIXM3MSHQ1528483047541.png')
             ];
         }
         elseif ($rating > 1570  && $rating <= 1770) {
             return [
                 'tier' => '11',
-                'name' => 'Претендент',
+                'name' => '竞争者',
                 'images' => asset('cms/template_resource/Q4TDZMWJS1DC1528483047584.png')
             ];
         }
         elseif ($rating > 1770  && $rating <= 2070) {
             return [
                 'tier' => '12',
-                'name' => 'Фаворит',
+                'name' => '赞助者',
                 'images' => asset('cms/template_resource/RI4P9I2JXXXL1528483047769.png')
             ];
         }
         elseif ($rating > 2070  && $rating <= 2370) {
             return [
                 'tier' => '13',
-                'name' => 'Дуэлянт',
+                'name' => '决斗者',
                 'images' => asset('cms/template_resource/9WPOSOBTK7GY1528483047820.png')
             ];
         }
         elseif ($rating > 2370) {
             return [
                 'tier' => '14',
-                'name' => 'Ветеран',
+                'name' => '大师',
                 'images' => asset('cms/template_resource/O3AI2CT4Q06V1528483048012.png')
             ];
         }
         return [
             'tier' => '8',
-            'name' => 'Без ранга',
+            'name' => '无排名',
             'images' => asset('cms/template_resource/RJ6XE5WS8D6G1528483047503.png')
         ];
     }
@@ -292,7 +292,7 @@ class Utils {
             return [
                 'enum' => 'HORDE',
                 'id' => 1,
-                'name' => 'Орда',
+                'name' => '部落',
                 'slug' => 'horde',
                 'images' => '/static/components/Icon/svg/horde.0a721bba8f062cd956f3e0c723d2b34b.svg#horde'
             ];
@@ -304,12 +304,12 @@ class Utils {
             return [
                 'enum' => 'ALLIANCE',
                 'id' => 0,
-                'name' => 'Альянс',
+                'name' => '联盟',
                 'slug' => 'alliance',
                 'images' => '/static/components/Icon/svg/alliance.f42675c36dac66ceab3ac9a774c188bd.svg#alliance'
             ];
         } else {
-            return 'Не известно';
+            return '未知';
         }
     }
 

@@ -23,7 +23,7 @@ class updateVote extends Command
      *
      * @var string
      */
-    protected $description = 'Обновление списка голосов';
+    protected $description = '更新投票清单。';
 
     /**
      * Create a new command instance.
@@ -77,7 +77,7 @@ class updateVote extends Command
                     History::create([
                         'user_id' => $game->id,
                         'service' => 'vote',
-                        'title' => 'Голосование за сервер',
+                        'title' => '服务器投票。',
                         'price' => $item->balance,
                         'status' => '1',
                     ]);

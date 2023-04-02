@@ -47,7 +47,7 @@ featured&quot;:&quot;false&quot;,&quot;locked&quot;:&quot;false&quot;,&quot;froz
                     <div class="TopicPost-bodyStatus">
                         <div class="TopicPost-statusTag highly-rated">
                             <span class="TopicPost-statusTagContent"> <i class="thumbsup"></i>
-                            <span class="TopicPost-statusTagText">Высокий рейтинг</span>
+                            <span class="TopicPost-statusTagText">高评分</span>
                             </span>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ featured&quot;:&quot;false&quot;,&quot;locked&quot;:&quot;false&quot;,&quot;froz
                        data-tooltip-content="{{ $post->created_at->format('m/d/Y H:i') }}"
                        data-original-title="" title="">{{ $post->created_at->format('m.d.Y H:i') }}</a>
                     @if($post->created_at != $post->updated_at)
-                        &#160;(Отредактировано)
+                        &#160;(已编辑)
                     @endif
                     @if($this->post->score() > 0 || $this->post->score() <= -1)
                     <span class="TopicPost-rank
@@ -77,7 +77,7 @@ featured&quot;:&quot;false&quot;,&quot;locked&quot;:&quot;false&quot;,&quot;froz
                 <aside class="TopicPost-control" x-data="{menu: false}" x-cloak>
                         <div class="TopicPost-menu Dropdown open">
                             <button x-on:click="menu = true" class="Button-dropdown Button--secondary Button--icon"
-                                    data-tooltip-content="Дополнительные настройки" type="button" data-original-title="" title="">
+                                    data-tooltip-content="附加设置" type="button" data-original-title="" title="">
                                 <span class="Button-content">
                                 <i class="Icon Icon--16 Icon--blue Icon--button Icon--caretdown"></i>
                             </span>
@@ -85,16 +85,16 @@ featured&quot;:&quot;false&quot;,&quot;locked&quot;:&quot;false&quot;,&quot;froz
                             <div x-show=menu @click.away="menu = false" class="Dropdown-menu">
                                 <span class="Dropdown-arrow Dropdown-arrow--up" data-attachment="top right" data-target-attachment="bottom center"></span>
                                 <div class="Dropdown-items">
-                                    <span class="Dropdown-item">Заблокировать</span>
+                                    <span class="Dropdown-item">屏蔽</span>
                                     <div class="Dropdown-divider"></div>
-                                    <span class="Dropdown-item">Открыть тему</span>
+                                    <span class="Dropdown-item">打开主题</span>
                                     <div class="Dropdown-divider"></div>
-                                    <span class="Dropdown-item">Открепить тему</span>
+                                    <span class="Dropdown-item">取消置顶主题</span>
                                     <div class="Dropdown-divider"></div>
-                                    <span class="Dropdown-item" wire:click="deletePost">Удалить</span>
+                                    <span class="Dropdown-item" wire:click="deletePost">删除</span>
                                     <div class="Dropdown-divider"></div>
-                                    <a href="{{ route('forums.topic.edit', [$post->id])}}" class="Dropdown-item">Редактировать</a>
-                                    <span class="Dropdown-item">Сообщить модераторам</span>
+                                    <a href="{{ route('forums.topic.edit', [$post->id])}}" class="Dropdown-item">编辑</a>
+                                    <span class="Dropdown-item">报告给版主</span>
                                 </div>
                             </div>
                         </div>
@@ -108,10 +108,10 @@ featured&quot;:&quot;false&quot;,&quot;locked&quot;:&quot;false&quot;,&quot;froz
             @if(auth()->check())
                 <footer class="TopicPost-actions" data-topic-post-body-content="true">
                     <x-btn.link class="TopicPost-button TopicPost-button--like" wire:click="upvote">
-                        <span class="Button-content"><i class="Icon"></i>Нравится</span>
+                        <span class="Button-content"><i class="Icon"></i>喜欢</span>
                     </x-btn.link>
                     <x-btn.link class="TopicPost-button TopicPost-button--dislike" wire:click="downvote">
-                        <span class="Button-content"><i class="Icon"></i>Не нравится</span>
+                        <span class="Button-content"><i class="Icon"></i>不喜欢</span>
                     </x-btn.link>
                 </footer>
             @endif

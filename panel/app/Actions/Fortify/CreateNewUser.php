@@ -27,8 +27,8 @@ class CreateNewUser implements CreatesNewUsers
     public function create(array $input)
     {
         $message = array(
-            'username.regex' => 'Логин может содержать только латинские буквы, цифры и дефис',
-            'name.unique' => 'NightHoldTag занят, укажите другой.'
+            'username.regex' => '用户名只能包含字母、数字和短横线',
+            'name.unique' => '用户名已被使用，请输入其他用户名。'
         );
 
         Validator::make($input, [

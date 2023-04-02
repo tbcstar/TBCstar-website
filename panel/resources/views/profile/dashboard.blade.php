@@ -93,13 +93,13 @@
                                 </div>
                                 <div data-v-19975e4f="" data-v-15d61d2e="" class="col-12 col-md-8">
                                     <span data-v-19975e4f="" data-v-15d61d2e="">
-                                        {{ auth()->user()->info->full_name_hidden  ?? 'Не указано.' }}
+                                        {{ auth()->user()->info->full_name_hidden  ?? '未提供。' }}
                                     </span>
                                 </div>
                             </div>
                             <div data-v-19975e4f="" data-v-15d61d2e="" class="row mt-3 mt-md-3">
                                 <div data-v-19975e4f="" data-v-15d61d2e="" class="label col-12 col-md-4">
-                                    NightHoldTag
+                                    TBCstarTag
                                 </div>
                                 <div data-v-19975e4f="" data-v-15d61d2e="" class="col-12 col-md-8">
                                     <span data-v-19975e4f="" data-v-15d61d2e="">
@@ -123,7 +123,7 @@
                                 </div>
                                 <div data-v-19975e4f="" data-v-15d61d2e="" class="col-12 col-md-8">
                                     <span data-v-19975e4f="" data-v-15d61d2e="">
-                                        {{ auth()->user()->info->phone_hidden  ?? 'Не указано.' }}
+                                        {{ auth()->user()->info->phone_hidden  ?? '未提供。' }}
                                     </span>
                                 </div>
                             </div>

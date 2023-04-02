@@ -2,17 +2,17 @@
     <x-jet-authentication-card>
         <div class="inner-wrapper">
             <div class="box-wrapper ">
-                <h1 class="logo ">Авторизация</h1>
+                <h1 class="logo ">授权</h1>
                 <div class="hide" id="info-wrapper">
                     <h2><strong class="info-title"></strong></h2>
                     <p class="info-body"></p>
-                    <button class="btn btn-block hide visible-phone" id="info-phone-close">Закрыть</button>
+                    <button class="btn btn-block hide visible-phone" id="info-phone-close">关闭</button>
                 </div>
                 <div class="input" id="login-wrapper">
                     <div class="login">
 
                         <div class="mb-4 font-medium text-sm text-green-600">
-                            {{ __('Забыли свой пароль? Без проблем. Просто сообщите нам свой адрес электронной почты, и мы пришлем вам ссылку для сброса пароля.') }}
+                            {{ __('忘记密码了吗？没问题。只需告诉我们您的电子邮件地址，我们会发送给您重置密码的链接。') }}
                         </div>
                         <br>
                         @if (session('status'))
@@ -39,7 +39,7 @@
                                     data-loading-text=""
                                     tabindex="0"
                                 >
-                                    Сбросить пароль
+                                    重置密码
                                     <i class="spinner-battlenet"></i>
                                 </button>
                             </div>

@@ -57,7 +57,7 @@ class Payoff extends Component
             'status' => 0
         ]);
 
-        session()->flash('message', 'Вывод отклонен.');
+        session()->flash('message', '输出被拒绝。');
     }
 
     public function render()

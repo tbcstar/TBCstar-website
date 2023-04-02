@@ -3,7 +3,7 @@
         <table data-v-483e03c5="" data-v-70ad3292="" aria-busy="false" aria-colcount="4" aria-rowcount="-1" class="table b-table table-hover table-dark account-table thead-hide thead-no-border table-background-transparent" sort-direction="asc" id="__BVID__34_">
             <thead class="thead-dark">
             <tr>
-                <th tabindex="0" aria-colindex="1" aria-label="Click to sort Ascending" aria-sort="descending" class="sorting sorting_desc d-none d-md-table-cell blz-md-15">Дата</th><th aria-colindex="2" class="w-100 w-md-auto blz-md-40 pl-3 pr-1">Наименование</th><th aria-colindex="3" class="d-none d-md-table-cell blz-md-15">Итого</th><th aria-colindex="4" class="blz-xs-35 blz-md-15">Статус</th></tr>
+                <th tabindex="0" aria-colindex="1" aria-label="点击以升序排序" aria-sort="descending" class="sorting sorting_desc d-none d-md-table-cell blz-md-15">日期</th><th aria-colindex="2" class="w-100 w-md-auto blz-md-40 pl-3 pr-1">名称</th><th aria-colindex="3" class="d-none d-md-table-cell blz-md-15">总计</th><th aria-colindex="4" class="blz-xs-35 blz-md-15">状态</th></tr>
             </thead>
             <tbody class="">
                 @foreach($transactions as $item)
@@ -45,7 +45,7 @@
         </table>
         @if($transactions->isEmpty())
         <div data-v-70ad3292="" class="table-states-container table-background-transparent">
-            Вы пока не делали заказов.
+            您还没有下订单。
         </div>
         @endif
     </div>

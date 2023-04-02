@@ -24,7 +24,7 @@ class UpdatePhone extends Component
     ];
 
     protected array $messages = [
-        'state.phone_number.required' => 'Введите номер.'
+        'state.phone_number.required' => '请输入电话号码。'
     ];
 
     public function updated($propertyName)
@@ -57,7 +57,7 @@ class UpdatePhone extends Component
         $password = strtoupper(sha1(strtoupper(Auth::user()->username . ':' . $this->password)));
         if (Auth::user()->sha_pass_hash != $password) {
             throw ValidationException::withMessages([
-                'password' => [__('Пароль не верный.')],
+                'password' => [__('密码不正确')],
             ]);
         }
         $user = UserData::whereUserId(auth()->id())->first();

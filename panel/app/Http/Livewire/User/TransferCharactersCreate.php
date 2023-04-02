@@ -38,17 +38,17 @@ class TransferCharactersCreate extends Component
     ];
 
     protected $messages = [
-        'login.required' => 'Поле не может быть пустым.',
-        'password.required' => 'Поле не может быть пустым.',
-        'nameOld.required' => 'Поле не может быть пустым.',
-        'name.required' => 'Поле не может быть пустым.',
-        'name.unique' => 'Имя персонажа занято.',
-        'server.required' => 'Поле не может быть пустым.',
-        'faction.required' => 'Поле не может быть пустым.',
-        'gender.required' => 'Поле не может быть пустым.',
-        'rasa.required' => 'Поле не может быть пустым.',
-        'class.required' => 'Поле не может быть пустым.',
-        'specializacia.required' => 'Поле не может быть пустым.',
+        'login.required' => '账户名不能为空。',
+        'password.required' => '密码不能为空。',
+        'nameOld.required' => '旧角色名不能为空。',
+        'name.required' => '新角色名不能为空。',
+        'name.unique' => '该角色名已被占用。',
+        'server.required' => '服务器不能为空。',
+        'faction.required' => '阵营不能为空。',
+        'gender.required' => '性别不能为空。',
+        'rasa.required' => '种族不能为空。',
+        'class.required' => '职业不能为空。',
+        'specializacia.required' => '专精不能为空。',
     ];
 
     public function updated($propertyName)
@@ -164,7 +164,7 @@ class TransferCharactersCreate extends Component
             case "DRUID":
                 return 11;
             default:
-                exit( "<br>YOUR CHARACTER CLASS IS NOT BLIZZLIKE FOR 3.3.5a<br>" );
+                exit( "<br>您的角色职业不符合3.3.5a的游戏要求。<br>" );
         }
     }
 }

@@ -1,11 +1,11 @@
 <div>
     <button type="submit" wire:click="$toggle('confirmGiftSend')" wire:loading.attr="disabled"
             data-v-15d61d2e="" class="btn-tertiary btn">
-        Использовать
+        使用
     </button>
     <x-jet-confirmation-modal wire:model="confirmGiftSend">
         <x-slot name="title">
-            {{ __('Выбранный персонаж. Сменить можно во вкладке "Персонажи"') }}
+            {{ __('已选择的角色。可在"角色"选项卡中更改') }}
         </x-slot>
 
         <x-slot name="content">
@@ -18,9 +18,9 @@
                                     <table data-v-483e03c5="" data-v-121e7cc8="" class="account-table thead-hide thead-no-border table-background-transparent table b-table table-dark">
                                         <thead class="thead-dark">
                                         <tr>
-                                            <th aria-colindex="3" class="d-none d-md-table-cell">Game Account Status</th>
-                                            <th aria-colindex="4" class="d-none d-xl-table-cell">Last Played Date Millis</th>
-                                            <th aria-colindex="5" class="d-none d-md-table-cell">Game Time View</th>
+                                            <th aria-colindex="3" class="d-none d-md-table-cell">游戏账户状态</th>
+                                            <th aria-colindex="4" class="d-none d-xl-table-cell">最后登录时间</th>
+                                            <th aria-colindex="5" class="d-none d-md-table-cell">游戏时间视图</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -31,21 +31,21 @@
                                                     <div data-v-121e7cc8="">{{ auth()->user()->active->realmName }}</div>
                                                     <div data-v-121e7cc8="" class="d-md-none">
                                                         <div data-v-121e7cc8="" class="mt-4">
-                                                            <div data-v-121e7cc8="" class="info-label">Время в игре</div>
+                                                            <div data-v-121e7cc8="" class="info-label">游戏时间</div>
                                                             <span data-v-121e7cc8="" class="text-light">{{ Text::totalTime(auth()->user()->active->totaltime) }}</span>
                                                         </div>
                                                         <div data-v-121e7cc8="" class="mt-4">
-                                                            <div data-v-121e7cc8="" class="info-label">Последний вход</div>
+                                                            <div data-v-121e7cc8="" class="info-label">上次登录</div>
                                                             <span data-v-121e7cc8="" class="text-light">{{ Text::lastLoginCharacters(auth()->user()->active->logout_time) }}</span>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td aria-colindex="3" class="d-none d-md-table-cell align-middle">
-                                                    <span data-v-121e7cc8="" class="text-light">Время в игре</span>
+                                                    <span data-v-121e7cc8="" class="text-light">游戏时间</span>
                                                     <div data-v-121e7cc8="" class="info-label">{{ Text::totalTime(auth()->user()->active->totaltime) }}</div>
                                                 </td>
                                                 <td aria-colindex="3" class="d-none d-md-table-cell align-middle">
-                                                    <span data-v-121e7cc8="" class="text-light">Последний вход</span>
+                                                    <span data-v-121e7cc8="" class="text-light">上次登录</span>
                                                     <div data-v-121e7cc8="" class="info-label">{{ Text::lastLoginCharacters(auth()->user()->active->logout_time) }}</div>
                                                 </td>
                                                 <td aria-colindex="4" class="d-none d-xl-table-cell align-middle"></td>
@@ -65,11 +65,11 @@
 
         <x-slot name="footer">
             <x-jet-secondary-button wire:click="$toggle('confirmGiftSend')" wire:loading.attr="disabled">
-                {{ __('Отмена') }}
+                {{ __('取消') }}
             </x-jet-secondary-button>
 
             <x-jet-danger-button class="ml-2" wire:click="sendGifts" wire:loading.attr="disabled">
-                {{ __('Отправить') }}
+                {{ __('发送') }}
             </x-jet-danger-button>
         </x-slot>
     </x-jet-confirmation-modal>

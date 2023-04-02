@@ -2,11 +2,11 @@
     <x-jet-authentication-card>
         <div class="inner-wrapper">
             <div class="box-wrapper ">
-                <h1 class="logo ">Авторизация</h1>
+                <h1 class="logo ">授权</h1>
                 <div class="hide" id="info-wrapper">
                     <h2><strong class="info-title"></strong></h2>
                     <p class="info-body"></p>
-                    <button class="btn btn-block hide visible-phone" id="info-phone-close">Закрыть</button>
+                    <button class="btn btn-block hide visible-phone" id="info-phone-close">关闭</button>
                 </div>
                 <div class="input" id="login-wrapper">
                     <div class="login">
@@ -35,7 +35,7 @@
                                     <label id="accountName-label" class="control-label"
                                            for="accountName">@lang('account.login_5')</label>
                                     <div class="controls">
-                                        <x-jet-input id="accountName" placeholder="E-Mail" class="input-block"
+                                        <x-jet-input id="accountName" placeholder="电子邮箱" class="input-block"
                                                      type="email" name="email"
                                                      :value="old('email')" required autofocus />
                                         <span class="input-after"></span>
@@ -49,7 +49,7 @@
                                         <x-jet-input id="password" class="input-block" type="password" name="password" required autocomplete="current-password" spellcheck="false"
                                                      data-password-show-aria="@lang('account.login_9')"
                                                      data-password-hide-aria="@lang('account.login_10')"
-                                                     placeholder="Пароль" />
+                                                     placeholder="密码" />
                                         <span class="input-after"></span>
                                         @error('password')<span class="error-helper error-helper-password status-warning" style="display: block;">{{ $message }}</span>@enderror
                                     </div>
@@ -65,7 +65,7 @@
                                             tabindex="0"
                                         />
                                         <span class="input-checkbox"></span>
-                                        {{ __('Remember me') }}
+                                        {{ __('记住我') }}
                                     </label>
                                 </div>
                             </div>
@@ -77,13 +77,13 @@
                                     data-loading-text=""
                                     tabindex="0"
                                 >
-                                    Вход
+                                    登录
                                     <i class="spinner-battlenet"></i>
                                 </button>
                             </div>
                         </form>
                         <div class="thirdparty-line">
-                            <span>Или</span>
+                            <span>或者</span>
                         </div>
                         <ul id="help-links" role="navigation">
                             <li role="link">
@@ -93,7 +93,7 @@
                                    tabindex="0"
                                    id="signup"
                                    role="button">
-                                    Создать аккаунт
+                                    创建账户
                                 </a>
                             </li>
                             @if (Route::has('password.request'))
@@ -105,7 +105,7 @@
                                        tabindex="0"
                                        id="loginSupport"
                                        role="button">
-                                        Восстановить пароль
+                                        重置密码
                                     </a>
                                 </li>
                             @endif

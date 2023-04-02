@@ -2,10 +2,10 @@
     <div>
     <ul class="nav nav-tabs">
     <li class="nav-item d-flex align-items-end">
-        <a href="javascript:void(0)" class="nav-link {{ $activeTab === 'trans' ? 'active' : '' }}" wire:click="$set('activeTab', 'trans')">ПОКУПКИ</a>
+        <a href="javascript:void(0)" class="nav-link {{ $activeTab === 'trans' ? 'active' : '' }}" wire:click="$set('activeTab', 'trans')">购买</a>
     </li>
     <li class="nav-item d-flex align-items-end">
-        <a href="javascript:void(0)" class="nav-link {{ $activeTab === 'gifts' ? 'active' : '' }}" wire:click="$set('activeTab', 'gifts')">ПОДАРКИ</a>
+        <a href="javascript:void(0)" class="nav-link {{ $activeTab === 'gifts' ? 'active' : '' }}" wire:click="$set('activeTab', 'gifts')">礼物</a>
     </li>
     </ul>
     </div>

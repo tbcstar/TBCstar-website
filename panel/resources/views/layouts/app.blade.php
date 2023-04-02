@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" type="image/x-icon" href="https://bnetaccount.akamaized.net/static/images/favicon.ico">
-    <title>Учетная запись</title>
+    <title>帐户</title>
     <link href="{{ asset('static/css/app.197e10d6e1ab03d7ded5b80d5b1125e0.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -580,7 +580,7 @@
                                         </div>
                                     </a>
                                     <a class="NavbarFooter-selectorLocale @if(app()->isLocale('ru')) is-active is-selected @endif NavbarFooter-selectorOption" href="{{ route('lang.switch', 'ru') }}" data-id="ru-ru">
-                                        <div class="NavbarFooter-selectorOptionLabel">Русский</div>
+                                        <div class="NavbarFooter-selectorOptionLabel">中文</div>
                                         <div class="NavbarFooter-selectorOptionCheck NavbarFooter-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" focusable="false"><use xlink:href="#Navbar-icon-check"></use>
                                             </svg>
@@ -605,7 +605,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="NavbarFooter-copyright">© {{ config('app.name') }}, Inc., 2021 - {{ date('Y') }}</div>
+                <div class="NavbarFooter-copyright">© {{ config('app.name') }}, Inc., 2023 - {{ date('Y') }}</div>
             </div>
         </div>
     </footer>

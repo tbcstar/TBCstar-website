@@ -16,8 +16,8 @@ class Payment extends Component
     public $enable;
 
     protected $messages = [
-        'sum.required' => 'Введите количество бонусов.',
-        'sum.min' => 'Минимальная сумма: :min бонусов.'
+        'sum.required' => '请输入DP点数。',
+        'sum.min' => '最小金额: :min个DP点。'
     ];
 
     protected function rules()
@@ -60,7 +60,7 @@ class Payment extends Component
                 'user_id' => Auth::id(),
                 'service' => 'balance',
                 'services' => 'FreeKassa',
-                'title' => 'Пополнение баланса',
+                'title' => '充值余额',
                 'price' => $this->sum,
                 'status' => '0',
                 'order_id' => $order_id
@@ -82,7 +82,7 @@ class Payment extends Component
                 'user_id' => Auth::id(),
                 'service' => 'balance',
                 'services' => 'Enot',
-                'title' => 'Пополнение баланса',
+                'title' => '充值余额',
                 'price' => $this->sum,
                 'status' => '0',
                 'order_id' => $PAYMENT_ID

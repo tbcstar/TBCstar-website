@@ -5,7 +5,7 @@
             <table data-v-483e03c5="" data-v-70ad3292="" class="table b-table table-hover table-dark transactions-table thead-no-border thead-text-normal card-background-color">
                 <thead class="thead-dark">
                     <tr>
-                    <th tabindex="0" aria-colindex="1" aria-label="Click to sort Ascending" aria-sort="descending" class="sorting sorting_desc d-none d-md-table-cell blz-md-15 text-nowrap">Дата</th><th aria-colindex="2" class="w-100 w-md-auto blz-md-40 pl-3 text-nowrap">Наименование</th><th aria-colindex="3" class="d-none d-md-table-cell blz-md-15 text-nowrap">Итого</th><th aria-colindex="4" class="blz-xs-35 blz-md-15 pl-1 pl-md-4 text-nowrap">Статус</th><th aria-colindex="5" class="d-none d-md-table-cell blz-md-15 text-nowrap">№ заказа</th></tr>
+                    <th tabindex="0" aria-colindex="1" aria-label="点击以升序排序" aria-sort="descending" class="sorting sorting_desc d-none d-md-table-cell blz-md-15 text-nowrap">日期</th><th aria-colindex="2" class="w-100 w-md-auto blz-md-40 pl-3 text-nowrap">名称</th><th aria-colindex="3" class="d-none d-md-table-cell blz-md-15 text-nowrap">总计</th><th aria-colindex="4" class="blz-xs-35 blz-md-15 pl-1 pl-md-4 text-nowrap">状态</th><th aria-colindex="5" class="d-none d-md-table-cell blz-md-15 text-nowrap">订单号</th></tr>
                 </thead>
                 <tbody>
                 @foreach($transact as $item)
@@ -41,10 +41,10 @@
                         <a data-v-70ad3292="" href="{{ route('profile.transactions.view', [$item->order_id, $item->id]) }}"
                            class="d-none
                         d-md-block">
-                            EU{{$item->order_id}}
+                            欧盟{{$item->order_id}}
                         </a>
                         @else
-                            System Info
+                            系统信息
                         @endif
                     </td>
                 </tr>
@@ -53,7 +53,7 @@
             </table>
             @if($transact->isEmpty())
                 <div data-v-70ad3292="" class="table-states-container table-background-transparent">
-                    История пуста.
+                    历史记录是空的。
                 </div>
             @endif
         </div>

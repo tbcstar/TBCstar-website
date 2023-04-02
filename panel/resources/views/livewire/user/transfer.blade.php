@@ -1,3 +1,3 @@
 <div>
-    {{-- If your happiness depends on money, you will never be happy with yourself. --}}
+    {{-- 如果你的快乐取决于金钱，你永远不会对自己感到快乐。 --}}
 </div>

@@ -193,7 +193,7 @@
                         <a href="{{ route('profile.payment.payoff.index') }}" class="Navbar-accountDropdownLink Navbar-accountDropdownGifts"
                            data-analytics="global-nav" data-analytics-placement="Nav - Account">
                             <div class="Navbar-icon Navbar-accountDropdownLinkIcon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" focusable="false" aria-hidden="true"><use xlink:href="#Navbar-icon-check"></use></svg></div>
-                            <div class="Navbar-accountDropdownLinkLabel">Вывод средств</div></a>
+                            <div class="Navbar-accountDropdownLinkLabel">提现</div></a>
                         @endif
                         <a href="{{ route('logout') }}" onclick="event.preventDefault();
 document.getElementById('logout-form').submit();" class="Navbar-accountDropdownLink" data-analytics="global-nav" data-analytics-placement="Nav - Account - Log Out">
@@ -237,7 +237,7 @@ document.getElementById('logout-form').submit();" class="Navbar-accountDropdownL
                         <a href="{{ route('profile.payment.payoff.index') }}" class="Navbar-accountDropdownLink Navbar-accountDropdownGifts"
                            data-analytics="global-nav" data-analytics-placement="Nav - Account">
                             <div class="Navbar-icon Navbar-accountDropdownLinkIcon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" focusable="false" aria-hidden="true"><use xlink:href="#Navbar-icon-check"></use></svg></div>
-                            <div class="Navbar-accountDropdownLinkLabel">Вывод средств</div></a>
+                            <div class="Navbar-accountDropdownLinkLabel">提现</div></a>
                     @endif
                     <a href="{{ route('logout') }}" onclick="event.preventDefault();
 document.getElementById('logout').submit();" class="Navbar-accountDropdownLink" data-analytics="global-nav" data-analytics-placement="Nav - Account - Log Out">
@@ -380,5 +380,6 @@ document.getElementById('logout').submit();" class="Navbar-accountDropdownLink" 
         </div>
     </div>
 
-    <div class="Navbar-toast Navbar-cookieCompliance"><div class="Navbar-toastContainer"><div class="Navbar-toastContent"><div class="Navbar-toastLabel Navbar-desktopOnly">Cookie-файлы</div><div class="Navbar-toastText"><div class="Navbar-desktopOnly">На сайтах {{ config('app.name') }} используются cookie-файлы и другие аналогичные технологии. Если, прочитав это сообщение, вы остаетесь на нашем сайте, это означает, что вы не возражаете против использования этих технологий.</div><div class="Navbar-mobileOnly">На этом сайте используются cookie-файлы. Если вы сейчас остаетесь на сайте, это означает, что вы не возражаете против использования этих технологий.</div></div><button id="cookie-compliance-agree" class="Navbar-button">Хорошо</button><a href="/" target="_blank"><button class="Navbar-button is-tertiary"><span>Подробнее</span><div class="Navbar-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" focusable="false"><use xlink:href="#Navbar-icon-new_window"></use></svg></div></button></a></div><div class="Navbar-icon Navbar-toastClose"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" focusable="false"><use xlink:href="#Navbar-icon-close"></use></svg></div></div></div>
+    <div class="Navbar-toast Navbar-cookieCompliance"><div class="Navbar-toastContainer"><div class="Navbar-toastContent"><div class="Navbar-toastLabel Navbar-desktopOnly">Cookie文件</div><div class="Navbar-toastText"><div class="Navbar-desktopOnly">{{ config('app.name') }}网站使用 Cookie 和其他类似技术。如果您在阅读本文时仍在我们的网站上,这意味着您不反对使用这些技术。</div><div class="Navbar-mobileOnly">本网站使用cookie。如果您现在留在网站上,这意味着您不反对使用这些技术。</div></div><button id="cookie-compliance-agree" class="Navbar-button">
+   同意</button><a href="/" target="_blank"><button class="Navbar-button is-tertiary"><span>详情如下</span><div class="Navbar-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" focusable="false"><use xlink:href="#Navbar-icon-new_window"></use></svg></div></button></a></div><div class="Navbar-icon Navbar-toastClose"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" focusable="false"><use xlink:href="#Navbar-icon-close"></use></svg></div></div></div>
 </div>

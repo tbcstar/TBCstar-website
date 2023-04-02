@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <title>Создание учетной записи NightHold</title>
+    <title>创建 TBCstar 帐户</title>
     <meta charset="UTF-8" />
     <meta name="description" content="Создание учетной записи Blizzard" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

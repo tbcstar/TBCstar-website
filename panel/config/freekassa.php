@@ -33,10 +33,10 @@ return [
      * Allowed ip's https://www.free-kassa.ru/docs/api.php#step3
      */
     'allowed_ips' => [
-        '168.119.157.136',
-        '168.119.60.227',
-        '138.201.88.124',
-        '178.154.197.79'
+        '1.12.247.177',     //web服务器地址
+        '119.91.89.137',    //游戏服务器地址
+        '205.185.119.172',  //下载服务器地址
+        '119.85.113.207'    //重庆电信
     ],
 
     /*
@@ -57,9 +57,9 @@ return [
     'paidOrder' => null, //  'App\Http\Controllers\FreeKassaController@paidOrder',
 
     'errors' => [
-        'validateOrderFromHandle' => 'Validate Order Error',
-        'searchOrder' => 'Search Order Error',
-        'paidOrder' => 'Paid Order Error',
+        'validateOrderFromHandle' => '订单验证错误',
+        'searchOrder' => '订单查询错误',
+        'paidOrder' => '订单支付错误',
     ],
 
     'pay_url' => 'https://pay.freekassa.ru/',
