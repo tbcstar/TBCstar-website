@@ -1,6 +1,21 @@
 # TBCstar-website
 Laravel框架的魔兽website源码
 
+安装步骤
+1、在网站根目录下，找到.env.example文件，并将其重命名为.env。打开.env文件并修改数据库配置信息，以匹配您的MySQL数据库设置。
+2、安装项目依赖：composer install
+3、生成应用程序密钥：php artisan key:generate
+4、运行数据库迁移：php artisan migrate --seed
+5、伪静态：
+location / {
+    try_files $uri $uri/ /index.php?$query_string;
+}
+6、目录权限：sudo chmod -R 755 storage 和 bootstrap/cache
+7、站点设置指向public目录
+
+
+
+
 站点功能：
 主页
 新闻系统
