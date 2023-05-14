@@ -13,7 +13,14 @@ location / {
 6、目录权限：sudo chmod -R 755 storage 和 bootstrap/cache
 7、站点设置指向public目录
 
+这是一个建议的配置：
 
+本地开发环境：
+APP_ENV=local
+APP_DEBUG=true
+生产环境：
+APP_ENV=production
+APP_DEBUG=false
 
 
 站点功能：
